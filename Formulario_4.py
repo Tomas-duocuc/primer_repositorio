@@ -17,8 +17,11 @@ def turistas_del_pais(pais):
             if paises==pais:
                 print(turistas[i][0])
 
-def turistas_por_mes():
-    
+def turistas_por_mes(mes):
+    for i in turistas:
+        mes_1=(turistas[i][2])
+        mes_2=(mes_1[3]+mes_1[4])
+
 opcion=0
 while opcion!=4:
     print("*** MENU PRINCIPAL ***")
@@ -51,6 +54,7 @@ while opcion!=4:
                     print("Eliga una de las opciones mencionadas")
             turistas_del_pais(pais)
         case 2:
-            
 
+            turistas_por_mes(mes)
 
+        case 3:
